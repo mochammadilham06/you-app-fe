@@ -17,7 +17,9 @@ export default function Header({
   return (
     <div className="relative flex items-center justify-between mb-6">
       <Button
-        onClick={() => router.back()}
+        onClick={() => {
+          onClickBack ? onClickBack() : router.back();
+        }}
         variant="link"
         size="lg"
         className="-ml-5"

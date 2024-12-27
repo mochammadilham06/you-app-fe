@@ -58,7 +58,7 @@ export default function Register() {
         className="flex justify-center items-center"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="space-y-6 w-full">
+        <div className="space-y-6 w-full md:max-w-md">
           <h2 className="text-2xl font-bold text-white mb-6 pl-5">Register</h2>
           <Controller
             name="email"

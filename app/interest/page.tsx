@@ -90,7 +90,7 @@ export default function InterestPage() {
   };
 
   return (
-    <>
+    <div className="md:max-w-md mx-auto">
       <Header
         title=""
         onCustomAction={
@@ -136,6 +136,6 @@ export default function InterestPage() {
       </div>
       <Modal {...modalProps} />
       <LoadingOverlay variant="overlay" isShow={loading} />
-    </>
+    </div>
   );
 }

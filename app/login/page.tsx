@@ -44,7 +44,7 @@ export default function Login() {
       className="flex w-full justify-center items-center min-h-screen"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="space-y-6 w-full">
+      <div className="space-y-6 w-full md:max-w-md">
         <h2 className="text-2xl font-bold text-white mb-6 pl-5">Login</h2>
 
         <Controller

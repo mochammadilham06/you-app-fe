@@ -139,7 +139,7 @@ export default function Page() {
     }
   };
   return (
-    <>
+    <div className="md:max-w-lg mx-auto">
       <Header
         title="@youapp"
         onCustomAction={
@@ -155,6 +155,7 @@ export default function Page() {
             />
           )
         }
+        onClickBack={() => {}}
       />
       {/* When about is filled */}
       <HeaderProfile gender={gender} image={image} profile={profile} />
@@ -173,6 +174,6 @@ export default function Page() {
 
       <Modal {...modalProps} />
       <LoadingOverlay variant="overlay" isShow={loading} />
-    </>
+    </div>
   );
 }
